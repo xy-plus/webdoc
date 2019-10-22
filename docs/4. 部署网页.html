@@ -250,11 +250,15 @@
 <p>&#x4EE5;&#x540E;&#x7F16;&#x5199;&#x5B8C;&#x6587;&#x6863;&#x540E;&#x9700;&#x8981; <strong>&#x5148;&#x5220;&#x9664;</strong> &#x539F;&#x5148;&#x7684; docs &#x76EE;&#x5F55;&#xFF0C;&#x8FD0;&#x884C; <code>gitbook serve</code> &#x4E4B;&#x540E;&#x5C06;&#x751F;&#x6210;&#x7684; _book &#x76EE;&#x5F55;&#x6539;&#x540D;&#x4E3A; docs</p>
 </blockquote>
 <p>&#x4E3A;&#x4E86;&#x7701;&#x4E8B;&#x6211;&#x5199;&#x4E86;&#x4E2A;&#x811A;&#x672C;&#xFF1A;</p>
+<ul>
+<li><code>update_book.sh</code></li>
+</ul>
 <pre><code class="lang-sh">rm -rf docs
 gitbook build
 mv _book docs
 <span class="hljs-built_in">cd</span> docs
 rm update_book.sh
+rm .gitignore
 <span class="hljs-built_in">cd</span> ..
 git add .
 git commit -m <span class="hljs-string">&quot;update&quot;</span>
@@ -348,7 +352,7 @@ git push
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. 部署网页","level":"1.5","depth":1,"previous":{"title":"3.2. 评论区","level":"1.4.2","depth":2,"path":"3.2. 评论区.md","ref":"3.2. 评论区.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","search-pro","github","localized-footer","ancre-navigation","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/xy-plus/webdoc"},"search-pro":{},"search":{},"localized-footer":{"filename":"gitbook/comment.html","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"gitbook/website.css"}},"file":{"path":"4. 部署网页.md","mtime":"2019-10-22T09:22:22.146Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T09:23:00.419Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. 部署网页","level":"1.5","depth":1,"previous":{"title":"3.2. 评论区","level":"1.4.2","depth":2,"path":"3.2. 评论区.md","ref":"3.2. 评论区.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","search-pro","github","localized-footer","ancre-navigation","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/xy-plus/webdoc"},"search-pro":{},"search":{},"localized-footer":{"filename":"gitbook/comment.html","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"gitbook/website.css"}},"file":{"path":"4. 部署网页.md","mtime":"2019-10-22T09:25:55.526Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T09:26:17.212Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
