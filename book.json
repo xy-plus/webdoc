@@ -6,7 +6,9 @@
     "github",
     "localized-footer",
     "ancre-navigation",
-    "-sharing"
+    "-sharing",
+	"-highlight",
+	"prism"
   ],
   "pluginsConfig": {
     "github": {
@@ -14,7 +16,10 @@
     },
     "localized-footer": {
       "filename": "gitbook/comment.html"
-    }
+    },
+	"prism": {
+	  "css": ["prismjs/themes/prism-tomorrow.css"]
+	}
   },
   "styles": {
     "website": "gitbook/website.css"

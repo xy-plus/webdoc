@@ -33,7 +33,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
                 
             
                 
@@ -66,7 +66,7 @@
 
     
     
-    <link rel="prev" href="3.2. 评论区.html" />
+    <link rel="prev" href="3.3. 代码高亮.html" />
     
 
     </head>
@@ -174,6 +174,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.3" data-path="3.3. 代码高亮.html">
+            
+                <a href="3.3. 代码高亮.html">
+            
+                    
+                    3.3. 代码高亮
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -248,15 +261,15 @@
 <ul>
 <li><code>update_book.sh</code></li>
 </ul>
-<pre><code class="lang-sh">gitbook build
-<span class="hljs-built_in">cd</span> _book
-rm .gitignore
-git init
-git remote add origin https://github.com/xxxxxxxxxxxx.git
-git add .
-git commit -m <span class="hljs-string">&quot;update&quot;</span>
-git push origin master <span class="hljs-_">-f</span>
-<span class="hljs-built_in">cd</span> ..
+<pre class="language-"><code class="lang-sh">gitbook build
+<span class="token builtin class-name">cd</span> _book
+<span class="token function">rm</span> .gitignore
+<span class="token function">git</span> init
+<span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/xxxxxxxxxxxx.git
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;update&quot;</span>
+<span class="token function">git</span> push origin master -f
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
 </code></pre>
 <h2 id="&#x90E8;&#x7F72;&#x5230;&#x5F53;&#x524D;&#x4ED3;&#x5E93;"><a name="&#x90E8;&#x7F72;&#x5230;&#x5F53;&#x524D;&#x4ED3;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x90E8;&#x7F72;&#x5230;&#x5F53;&#x524D;&#x4ED3;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x90E8;&#x7F72;&#x5230;&#x5F53;&#x524D;&#x4ED3;&#x5E93;</h2>
 <p>&#x4FEE;&#x6539; _book &#x76EE;&#x5F55;&#x540D;&#x4E3A; docs &#xFF0C;&#x5728;&#x4ED3;&#x5E93;&#x7684; Settings &gt; GitHub Pages &#x4E0B;&#x9009;&#x62E9; sourse &#x4E3A; master branch/docs folder &#x3002;</p>
@@ -267,18 +280,19 @@ git push origin master <span class="hljs-_">-f</span>
 <ul>
 <li><code>update_book.sh</code></li>
 </ul>
-<pre><code class="lang-sh">rm -rf docs
+<pre class="language-"><code class="lang-sh"><span class="token function">rm</span> -rf docs
 gitbook build
-mv _book docs
-<span class="hljs-built_in">cd</span> docs
-rm update_book.sh
-rm .gitignore
-git add .
-git commit -m <span class="hljs-string">&quot;update web&quot;</span>
-<span class="hljs-built_in">cd</span> ..
-git add .
-git commit -m <span class="hljs-string">&quot;update doc&quot;</span>
-git push
+<span class="token function">mv</span> _book docs
+python3 add_code_style.py
+<span class="token builtin class-name">cd</span> docs
+<span class="token function">rm</span> update_book.sh
+<span class="token function">rm</span> .gitignore
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;update web&quot;</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;update doc&quot;</span>
+<span class="token function">git</span> push
 </code></pre>
 <p><div id="page-footer" class="localized-footer"><hr><p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
@@ -356,7 +370,7 @@ id: document.title
 
             
                 
-                <a href="3.2. 评论区.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3.2. 评论区">
+                <a href="3.3. 代码高亮.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3.3. 代码高亮">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -368,7 +382,7 @@ id: document.title
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. 部署网页","level":"1.5","depth":1,"previous":{"title":"3.2. 评论区","level":"1.4.2","depth":2,"path":"3.2. 评论区.md","ref":"3.2. 评论区.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","search-pro","github","localized-footer","ancre-navigation","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/xy-plus/webdoc"},"search-pro":{},"search":{},"localized-footer":{"filename":"gitbook/comment.html","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"gitbook/website.css"}},"file":{"path":"4. 部署网页.md","mtime":"2019-10-29T07:38:46.019Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-29T07:41:31.237Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. 部署网页","level":"1.5","depth":1,"previous":{"title":"3.3. 代码高亮","level":"1.4.3","depth":2,"path":"3.3. 代码高亮.md","ref":"3.3. 代码高亮.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","search-pro","github","localized-footer","ancre-navigation","-sharing","-highlight","prism"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/xy-plus/webdoc"},"search-pro":{},"search":{},"localized-footer":{"filename":"gitbook/comment.html","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"gitbook/website.css"}},"file":{"path":"4. 部署网页.md","mtime":"2019-12-06T17:23:32.128Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-06T17:25:00.849Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
