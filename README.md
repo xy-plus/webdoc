@@ -1,6 +1,6 @@
 # build web doc
 
-用于构建含评论区（与 GitHub issue 关联）的 GitHun Page 的教程，文档已通过网页形式部署于：https://xy-plus.github.io/webdoc/
+用于构建含评论区（与 GitHub issue 关联）的 GitHub Page 的教程，文档已通过网页形式部署于：https://xy-plus.github.io/webdoc/
 
 ## 快速构建
 
